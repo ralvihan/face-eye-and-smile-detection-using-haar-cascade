@@ -1,28 +1,28 @@
-# Deteksi Wajah, Mata, dan Senyuman Real-Time Menggunakan OpenCV
+# Real-Time Face, Eye, and Smile Detection
 
-Proyek ini menampilkan bagaimana cara melakukan deteksi fitur wajah secara real-time menggunakan pustaka OpenCV dan algoritma Haar Cascade Classifier. Fitur yang dapat dideteksi meliputi:
-- Deteksi Wajah
-- Deteksi Wajah dan Mata
-- Deteksi Wajah dan Senyuman
-- Deteksi Wajah, Mata, dan Senyuman sekaligus
-- Visualisasi jumlah deteksi dalam bentuk grafik
+A real-time facial feature detection project built with OpenCV and Haar Cascade Classifiers. It detects faces, eyes, and smiles from a webcam feed, either separately or combined, and includes a script that records detection counts over 15 seconds and plots them as a chart.
 
-## 📁 Daftar File Proyek
-- `faceDetection.py`: Deteksi wajah melalui input kamera.
-- `faceEyeDetection.py`: Deteksi wajah dan mata secara bersamaan.
-- `faceSmileDetection.py`: Deteksi wajah dan senyuman.
-- `faceEyeSmileDetection.py`: Deteksi lengkap (wajah, mata, dan senyum).
-- `grafik.py`: Mencatat dan menampilkan grafik jumlah deteksi selama 15 detik.
+## Project Structure
 
-## Tools yang Digunakan
-- Python 3.x
-- OpenCV (`cv2`)
-- NumPy
-- Matplotlib (khusus digunakan dalam `grafik.py`)
-- Modul `time` (untuk timer grafik)
+| File | Description |
+|---|---|
+| `faceDetection.py` | Face detection |
+| `faceEyeDetection.py` | Face and eye detection |
+| `faceSmileDetection.py` | Face and smile detection |
+| `faceEyeSmileDetection.py` | Face, eye, and smile detection combined |
+| `grafik.py` | Detection count chart over 15 seconds |
 
-## Instalasi pustaka (jika belum tersedia):
-`bash`
-`pip install opencv-python numpy matplotlib`
+## Tech Stack
 
-![alt text](figure.png)
+Python, OpenCV, NumPy, Matplotlib
+
+## Getting Started
+
+```bash
+pip install opencv-python numpy matplotlib
+python faceEyeSmileDetection.py
+```
+
+## Result
+
+![Detection count chart](figure.png)
